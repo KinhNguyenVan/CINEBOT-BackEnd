@@ -7,7 +7,7 @@ class GeminiProvider(LLMProvider):
         raw_llm = ChatGoogleGenerativeAI(
             model="gemini-2.5-flash",
             google_api_key=settings.GEMINI_API_KEY,
-            temperature=1.2
+            temperature=1.0
         )
         return raw_llm
 
