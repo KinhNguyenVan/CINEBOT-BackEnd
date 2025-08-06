@@ -79,7 +79,7 @@ def get_top_watched_movies(db: Session, limit: int = 5, days: int = 7):
             "id": movie.id,
             "title": movie.name,
             "genre": movie.genre,
-            "ageRating": movie.actors,  # FE đang dùng key này cho "nhãn"
+            "ageRating": movie.actors,  
             "viewCount": views,
             "image": movie.poster
         }
