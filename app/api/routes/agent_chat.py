@@ -2,9 +2,7 @@ from fastapi import APIRouter
 from app.service.agent_service.agent_builder import AgentService
 from app.utils.generate_session_id_by_email import generate_session_id_by_email
 from app.schemas.chat import ChatMessageBase 
-from app.service.agent_service.tracing import enable_tracing
 from app.schemas.user import UserSession
-import uuid
 import time
 
 router = APIRouter()
