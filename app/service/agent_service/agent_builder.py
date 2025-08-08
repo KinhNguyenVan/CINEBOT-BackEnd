@@ -66,7 +66,7 @@ class AgentService:
                 agent=agent,
                 tools=self.tools,
                 memory=self.chat_history,
-                verbose=False,
+                verbose=True,
                 handle_parsing_errors=True,
                 max_iterations=50,
                 max_execution_time=40,
